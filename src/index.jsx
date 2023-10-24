@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
+import ReactDOM from "react-dom";
 import Dictionary from './Dictionary';
+import './index.css';
 
-const App = () => {
-  return (
-    <div>
-      <h1>Dictionary</h1>
-      <Dictionary />
-    </div>
-  );
-};
-
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <Dictionary />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
